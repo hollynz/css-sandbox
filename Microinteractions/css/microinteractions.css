@@ -1,0 +1,103 @@
+*, * :after, *:before {
+    box-sizing: border-box;
+  }
+
+  body{
+      background: #004;
+  }
+
+  /* Sparkler */
+
+  .gallery-img{
+      position: relative;
+      width: 400px;
+  }
+
+  .gallery-img img{
+    width: 100%;
+}
+
+.gallery-img a{
+    color: #fff;
+}
+
+.gallery-img .desc{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.gallery-img h3{
+    position: relative;
+    left: 15px;
+    transition: all 0.4s;
+}
+
+.gallery-img a:hover .desc{
+    opacity: 1;
+}
+
+.gallery-img a:hover h3{
+    left: 5px;
+}
+
+/* Search bar growth */
+
+.search{
+    margin-bottom: 50px;
+}
+
+.search input{
+    outline: none;
+    width: 40px;
+    background: url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 9px center;
+    border: solid 1px #ccc;
+    border-radius: 20px;
+    padding: 9px 10px 9px 32px;
+    transition: width .5s;
+}
+
+.search input:focus{
+    width: 250px;
+}
+
+.search input::placeholder{
+    color: #999;
+}
+
+/* Menu with underline */
+
+  .main-menu li{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      display: inline-block;
+      padding: 0 15px;
+  }
+
+  .main-menu a{
+       position: relative;
+       text-decoration: none;
+       color: #fff;
+  }
+
+  .main-menu a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    /* right: 0; Uncomment for continuing effect */
+    background: #fff;
+    transition: width .2s ease;
+  }
+
+  .main-menu a:hover::after{
+      width: 100%;
+      left: 0;
+      background: #fff;
+  }

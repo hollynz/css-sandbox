@@ -1,0 +1,42 @@
+// https://bulma.io/documentation/customize/with-node-sass/
+// 
+// Add script to prefs:
+//
+// "liveSassCompile.settings.formats":[
+//         // Expanded CSS
+//         {
+//             "format": "expanded",
+//             "extensionName": ".css",
+//             "savePath": "~/../css/"
+//         },
+//         // Minified CSS
+//         {
+//             "format": "compressed",
+//             "extensionName": ".min.css",
+//             "savePath": "~/../dist/css"
+//         }
+//     ]
+
+// Bulma's
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// To import all you need to import the folder dir + _all.sass !!!
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass"; 
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/form.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+
+// Mine
+@import "abstracts/index";
+@import "base/index";
+@import "components/index";
+@import "layout/index";
+@import "pages/index";
+@import "themes/index";
+@import "vendors/index";

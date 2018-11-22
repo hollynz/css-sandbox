@@ -1,0 +1,51 @@
+*,* :after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+   }
+   
+   .bird {
+    position: relative;
+    width: 400px;
+   }
+   
+   .bird img {
+    max-width: 100%;
+    width: 100%;
+    
+   }
+   
+   .bird a {
+    color: white;
+    
+   }
+   
+   .bird--desc{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding: 0 10px;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, .6);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+   
+   }
+   
+   .bird--desc h3 {
+    position: relative;
+    left: 15px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+   }
+   
+   .bird a:hover .bird--desc {
+    opacity: 1;
+   }
+   
+   .bird a:hover h3 {
+    left: 5px;
+   }
